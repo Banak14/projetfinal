@@ -27,17 +27,17 @@ This project follows the full data analytics pipeline:
 - Creating interaction terms between key features (e.g., stress levels and work location).
 - Applying SMOTE for class imbalance treatment.
 
-2. Exploratory Data Analysis:
+2 .Exploratory Data Analysis:
 
 - Visualization of the relationship between stress levels, work-life balance, and mental health.
 - Identification of patterns through bar plots, heatmaps, and pair plots.
 
-3. Feature Engineering:
+3 .Feature Engineering:
 
 - Interaction terms such as 'Stress_Work_Location.'
 - Binning of continuous variables such as 'Age' into categories (Young, Mid, Senior).
 
-4. Modeling:
+4 .Modeling:
 
 Implemented multiple machine learning models:
 - Logistic Regression
@@ -49,7 +49,7 @@ Implemented multiple machine learning models:
 Hyperparameter tuning and model evaluation using accuracy and classification reports.
 Addressing class imbalance with SMOTE and weighted models.
 
-5. Results and Insights:
+5 .Results and Insights:
 
 - Random Forest achieved the best performance in terms of accuracy and balanced predictions across mental health conditions.
 - Feature importance analysis revealed stress level, work-life balance, and work location as significant contributors to mental health conditions.
