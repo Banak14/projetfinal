@@ -31,13 +31,19 @@ This project follows the full data analytics pipeline:
 
 - Visualization of the relationship between stress levels, work-life balance, and mental health.
 - Identification of patterns through bar plots, heatmaps, and pair plots.
+- EDA and visualization tools were crucial for deriving insights from the dataset, guiding the feature selection and model development process.
 
 3 .Feature Engineering:
 
 - Interaction terms such as 'Stress_Work_Location.'
 - Binning of continuous variables such as 'Age' into categories (Young, Mid, Senior).
 
-4 .Modeling:
+4 .API Integration:
+
+- A Flask-based API was created to serve the processed data, providing access to key insights and allowing users to view data and statistics in a dynamic manner.
+- The API enables a user-friendly interface for accessing analysis results, enhancing the accessibility of the data insights
+
+5 .Modeling:
 
 Implemented multiple machine learning models:
 - Logistic Regression
@@ -49,7 +55,7 @@ Implemented multiple machine learning models:
 Hyperparameter tuning and model evaluation using accuracy and classification reports.
 Addressing class imbalance with SMOTE and weighted models.
 
-5 .Results and Insights:
+6 .Results and Insights:
 
 - Random Forest achieved the best performance in terms of accuracy and balanced predictions across mental health conditions.
 - Feature importance analysis revealed stress level, work-life balance, and work location as significant contributors to mental health conditions.
@@ -69,6 +75,8 @@ Key Insights:
 
 ## Tools & Libraries
 - Python: For data analysis and machine learning (pandas, scikit-learn, imblearn, etc.).
+- Flask: For API integration, allowing users to access data insights.
+- SQLAlchemy: For efficient data handling and storage using MySQL.
 - Tableau: For building interactive dashboards.
 - PowerPoint: For final project presentation.
 

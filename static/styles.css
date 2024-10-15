@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h1, h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn{
+    display: inline-block;
+    color: white;
+    background-color: #007bff;
+    padding: 8px 15px;
+    margin: 15px 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #0056b3;
+
+}
+
+/* Table styling to ensure data renders properly */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.table-container {
+    overflow: auto;
+    max-width: 100%;
+    padding: 20px;
+}

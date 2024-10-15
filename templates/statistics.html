@@ -1,0 +1,43 @@
+
+{% extends "layout.html" %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block content %}
+    <h2>Data Analysis</h2>
+    <p>Here are some basic statistics and visualizations of the dataset:</p>
+
+    <!-- Summary Statistics Example -->
+    <h3>Summary Statistics</h3>
+    <table>
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>Average Work-Life Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for job_role, avg_wlb in job_role_stats.items() %}
+    <tr>
+      <td>{{ job_role }}</td>
+      <td>{{ avg_wlb }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+    <h3>Visualizations</h3>
+<!-- Work-Life Balance by Job Role Graph -->
+<img src="{{ url_for('static', filename='img/work_life_balance.png') }}" alt="Work-Life Balance by Job Role">
+
+<!-- Productivity vs Work Location Graph -->
+<img src="{{ url_for('static', filename='img/productivity_vs_work_location.png') }}" alt="Productivity vs Work Location">
+
+<!-- Stress vs Job Roles Graph -->
+<img src="{{ url_for('static', filename='img/stress_vs_job_roles.png') }}" alt="Stress vs Job Roles">
+
+
+
+{% endblock %}
